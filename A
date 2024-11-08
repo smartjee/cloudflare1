@@ -1,1 +1,41 @@
-
+{
+  "Status": 0 /* NOERROR */,
+  "TC": false,
+  "RD": true,
+  "RA": true,
+  "AD": false,
+  "CD": true,
+  "Question": [
+    {
+      "name": "casa-estancia.net.",
+      "type": 1 /* A */
+    }
+  ],
+  "Answer": [
+    {
+      "name": "casa-estancia.net.",
+      "type": 1 /* A */,
+      "TTL": 3600,
+      "data": "185.199.109.153"
+    },
+    {
+      "name": "casa-estancia.net.",
+      "type": 1 /* A */,
+      "TTL": 3600,
+      "data": "185.199.110.153"
+    },
+    {
+      "name": "casa-estancia.net.",
+      "type": 1 /* A */,
+      "TTL": 3600,
+      "data": "185.199.108.153"
+    },
+    {
+      "name": "casa-estancia.net.",
+      "type": 1 /* A */,
+      "TTL": 3600,
+      "data": "185.199.111.153"
+    }
+  ],
+  "Comment": "Response from 205.251.194.180."
+}
