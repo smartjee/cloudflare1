@@ -1,5 +1,5 @@
 <html class="gt-ie8 gt-ie9 not-ie" lang="en" style="height: 100%;"><head>
-  <title>My No-IP :: Managed DNS : Add a host</title>
+  <title>My No-IP :: Manage DNS Records</title>
   <meta charset="utf-8">
   <meta name="language" content="English">
   <meta id="token" name="token" content="BkoTFE0Uj74YkCn5bevXvAaj7fMJw9YZf4odl0nm">
@@ -32,7 +32,6 @@
 <script src="//d2qr50rz2oof04.cloudfront.net/scripts/host.jquery.js"></script>
 
   <link href="https://d2qr50rz2oof04.cloudfront.net/assets/build/css/mini_cart.css" rel="stylesheet" type="text/css">
-  
 
 <style type="text/css">
 
@@ -60,7 +59,8 @@
 
 
 
-</head> 
+</head>
+
 <body class="theme-prism main-navbar-fixed main-menu-fixed page-profile animate-mm-sm animate-mm-md animate-mm-lg mmo light-theme" style="position: relative; min-height: 100%; top: 0px;" screen_capture_injected="true">
 
   <!-- GDPR -->
@@ -391,7 +391,7 @@
     <div class="row">
       <div class="col-sm-12">
         <h1 class="text-left-sm">
-          <i class=" noip-icon-iconic-cog-blue page-header-icon"></i>Managed DNS : Add a host
+          <i class=" noip-icon-iconic-cog-blue page-header-icon"></i>Manage DNS Records
         </h1>
       </div>
     </div>
@@ -401,16 +401,14 @@
 
 <ul class="breadcrumb breadcrumb-page">
   <li><a href="/redirect/mynoip?force=true">My No-IP</a></li>
-    <li>
-  <a href="/members/dns/">Managed DNS</a></li>
-        <li class="active">Add a host</li>
+        <li class="active">Manage Hostnames</li>
 </ul>
 				<div class="row">
 				    <div class="col-md-12">
 				      <div class="profile-content">
 																		
 									<ul id="profile-tabs" class="nav nav-tabs nav-tabs-simple hidden-xs hidden-sm mb-20">
-	<div class="pr-0 pl-0 pl-lg-0 pr-lg-0 pull-left d-inline"><a href="/members/dns/host.php" class="youarehere active btn btn-noip-blue btn-md btn-full nbr pt-10 pb-10">Create Hostname</a></div><div class="pr-0 pl-0 pl-lg-0 pr-lg-0 pull-left d-inline"><a href="/members/dns/" class=" btn btn-noip-blue btn-md btn-full nbr pt-10 pb-10">Manage DNS Records</a></div><div class="pr-0 pl-0 pl-lg-0 pr-lg-0 pull-left d-inline"><a href="/redirect/mynoip?force=true&intended=dynamic-dns/groups" class=" btn btn-noip-blue btn-md btn-full nbr pt-10 pb-10">Manage Groups</a></div><div class="pr-0 pl-0 pl-lg-0 pr-lg-0 pull-left d-inline"><a href="/redirect/mynoip?force=true&intended=dynamic-dns/duc" class=" btn btn-noip-blue btn-md btn-full nbr pt-10 pb-10">Dynamic Update Client</a></div>
+	<div class="pr-0 pl-0 pl-lg-0 pr-lg-0 pull-left d-inline"><a href="/members/dns/host.php" class=" btn btn-noip-blue btn-md btn-full nbr pt-10 pb-10">Create Hostname</a></div><div class="pr-0 pl-0 pl-lg-0 pr-lg-0 pull-left d-inline"><a href="/members/dns/" class="youarehere active btn btn-noip-blue btn-md btn-full nbr pt-10 pb-10">Manage DNS Records</a></div><div class="pr-0 pl-0 pl-lg-0 pr-lg-0 pull-left d-inline"><a href="/redirect/mynoip?force=true&intended=dynamic-dns/groups" class=" btn btn-noip-blue btn-md btn-full nbr pt-10 pb-10">Manage Groups</a></div><div class="pr-0 pl-0 pl-lg-0 pr-lg-0 pull-left d-inline"><a href="/redirect/mynoip?force=true&intended=dynamic-dns/duc" class=" btn btn-noip-blue btn-md btn-full nbr pt-10 pb-10">Dynamic Update Client</a></div>
 </ul>
 
 <!-- mobile button group -->
@@ -419,562 +417,328 @@
     Manage DNS Links <span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
-    <li class="youarehere active"><a href="/members/dns/host.php">Create Hostname</a></li><li class=""><a href="/members/dns/">Manage DNS Records</a></li><li class=""><a href="/redirect/mynoip?force=true&intended=dynamic-dns/groups">Manage Groups</a></li><li class=""><a href="/redirect/mynoip?force=true&intended=dynamic-dns/duc">Dynamic Update Client</a></li>  </ul>
+    <li class=""><a href="/members/dns/host.php">Create Hostname</a></li><li class="youarehere active"><a href="/members/dns/">Manage DNS Records</a></li><li class=""><a href="/redirect/mynoip?force=true&intended=dynamic-dns/groups">Manage Groups</a></li><li class=""><a href="/redirect/mynoip?force=true&intended=dynamic-dns/duc">Dynamic Update Client</a></li>  </ul>
 </div>									
 
-<div class="page-profile">
-  <div class="profile-content">
-    <div id="tab-content">
-				<div class="panel">
-					<div class="panel-body">
-						<form method="POST" class="mb-0">
-						<input type="hidden" name="token" value="BQEvPJi73pxBTdGmrcn48AwS2I6I8Uax5AgyuHiI">
-						<div class="form-layout">
-							<h5>Hostname Information</h5>
-							<div class="form-group">
-																	<label class="control-label">Hostname</label>	<span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="A hostname is the unique name that will identify your computer. Pick something you will remember, such as yourname.serveftp.org."><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="no-padding position-relative">										<input type="text" id="hostname" name="host[host]" value="" class=" form-control"/></div>
-																			</div>
 
-															            						                <select name="host[domain]" class="chosen-select">
-	<optgroup label="No-IP Plus Domains">
-</optgroup>	<optgroup label="Enhanced Dynamic DNS Domains">
-	<option data-domain-type='enhanced' value="access.ly">access.ly</option>
-	<option data-domain-type='enhanced' value="blogsyte.com">blogsyte.com</option>
-	<option data-domain-type='enhanced' value="brasilia.me">brasilia.me</option>
-	<option data-domain-type='enhanced' value="cable-modem.org">cable-modem.org</option>
-	<option data-domain-type='enhanced' value="ciscofreak.com">ciscofreak.com</option>
-	<option data-domain-type='enhanced' value="collegefan.org">collegefan.org</option>
-	<option data-domain-type='enhanced' value="couchpotatofries.org">couchpotatofries.org</option>
-	<option data-domain-type='enhanced' value="damnserver.com">damnserver.com</option>
-	<option data-domain-type='enhanced' value="ddns.me">ddns.me</option>
-	<option data-domain-type='enhanced' value="ditchyourip.com">ditchyourip.com</option>
-	<option data-domain-type='enhanced' value="dnsfor.me">dnsfor.me</option>
-	<option data-domain-type='enhanced' value="dnsiskinky.com">dnsiskinky.com</option>
-	<option data-domain-type='enhanced' value="dvrcam.info">dvrcam.info</option>
-	<option data-domain-type='enhanced' value="dynns.com">dynns.com</option>
-	<option data-domain-type='enhanced' value="eating-organic.net">eating-organic.net</option>
-	<option data-domain-type='enhanced' value="fantasyleague.cc">fantasyleague.cc</option>
-	<option data-domain-type='enhanced' value="geekgalaxy.com">geekgalaxy.com</option>
-	<option data-domain-type='enhanced' value="golffan.us">golffan.us</option>
-	<option data-domain-type='enhanced' value="health-carereform.com">health-carereform.com</option>
-	<option data-domain-type='enhanced' value="homesecuritymac.com">homesecuritymac.com</option>
-	<option data-domain-type='enhanced' value="homesecuritypc.com">homesecuritypc.com</option>
-	<option data-domain-type='enhanced' value="hopto.me">hopto.me</option>
-	<option data-domain-type='enhanced' value="hosthampster.com">hosthampster.com</option>
-	<option data-domain-type='enhanced' value="ilovecollege.info">ilovecollege.info</option>
-	<option data-domain-type='enhanced' value="loginto.me">loginto.me</option>
-	<option data-domain-type='enhanced' value="mlbfan.org">mlbfan.org</option>
-	<option data-domain-type='enhanced' value="mmafan.biz">mmafan.biz</option>
-	<option data-domain-type='enhanced' value="myactivedirectory.com">myactivedirectory.com</option>
-	<option data-domain-type='enhanced' value="mydissent.net">mydissent.net</option>
-	<option data-domain-type='enhanced' value="myeffect.net">myeffect.net</option>
-	<option data-domain-type='enhanced' value="mymediapc.net">mymediapc.net</option>
-	<option data-domain-type='enhanced' value="mypsx.net">mypsx.net</option>
-	<option data-domain-type='enhanced' value="mysecuritycamera.com">mysecuritycamera.com</option>
-	<option data-domain-type='enhanced' value="mysecuritycamera.net">mysecuritycamera.net</option>
-	<option data-domain-type='enhanced' value="mysecuritycamera.org">mysecuritycamera.org</option>
-	<option data-domain-type='enhanced' value="net-freaks.com">net-freaks.com</option>
-	<option data-domain-type='enhanced' value="nflfan.org">nflfan.org</option>
-	<option data-domain-type='enhanced' value="nhlfan.net">nhlfan.net</option>
-	<option data-domain-type='enhanced' value="pgafan.net">pgafan.net</option>
-	<option data-domain-type='enhanced' value="point2this.com">point2this.com</option>
-	<option data-domain-type='enhanced' value="pointto.us">pointto.us</option>
-	<option data-domain-type='enhanced' value="privatizehealthinsurance.net">privatizehealthinsurance.net</option>
-	<option data-domain-type='enhanced' value="quicksytes.com">quicksytes.com</option>
-	<option data-domain-type='enhanced' value="read-books.org">read-books.org</option>
-	<option data-domain-type='enhanced' value="securitytactics.com">securitytactics.com</option>
-	<option data-domain-type='enhanced' value="serveexchange.com">serveexchange.com</option>
-	<option data-domain-type='enhanced' value="servehumour.com">servehumour.com</option>
-	<option data-domain-type='enhanced' value="servep2p.com">servep2p.com</option>
-	<option data-domain-type='enhanced' value="servesarcasm.com">servesarcasm.com</option>
-	<option data-domain-type='enhanced' value="stufftoread.com">stufftoread.com</option>
-	<option data-domain-type='enhanced' value="ufcfan.org">ufcfan.org</option>
-	<option data-domain-type='enhanced' value="unusualperson.com">unusualperson.com</option>
-	<option data-domain-type='enhanced' value="workisboring.com">workisboring.com</option>
-</optgroup>	<optgroup label="No-IP Free Domains">
-		<option data-domain-type='free' value="zapto.org"selected>zapto.org</option>
-		<option data-domain-type='free' value="3utilities.com">3utilities.com</option>
-		<option data-domain-type='free' value="bounceme.net">bounceme.net</option>
-		<option data-domain-type='free' value="ddns.net">ddns.net</option>
-		<option data-domain-type='free' value="ddnsking.com">ddnsking.com</option>
-		<option data-domain-type='free' value="freedynamicdns.net">freedynamicdns.net</option>
-		<option data-domain-type='free' value="freedynamicdns.org">freedynamicdns.org</option>
-		<option data-domain-type='free' value="gotdns.ch">gotdns.ch</option>
-		<option data-domain-type='free' value="hopto.org">hopto.org</option>
-		<option data-domain-type='free' value="myddns.me">myddns.me</option>
-		<option data-domain-type='free' value="myftp.biz">myftp.biz</option>
-		<option data-domain-type='free' value="myftp.org">myftp.org</option>
-		<option data-domain-type='free' value="myvnc.com">myvnc.com</option>
-		<option data-domain-type='free' value="onthewifi.com">onthewifi.com</option>
-		<option data-domain-type='free' value="redirectme.net">redirectme.net</option>
-		<option data-domain-type='free' value="servebeer.com">servebeer.com</option>
-		<option data-domain-type='free' value="serveblog.net">serveblog.net</option>
-		<option data-domain-type='free' value="servecounterstrike.com">servecounterstrike.com</option>
-		<option data-domain-type='free' value="serveftp.com">serveftp.com</option>
-		<option data-domain-type='free' value="servegame.com">servegame.com</option>
-		<option data-domain-type='free' value="servehalflife.com">servehalflife.com</option>
-		<option data-domain-type='free' value="servehttp.com">servehttp.com</option>
-		<option data-domain-type='free' value="serveminecraft.net">serveminecraft.net</option>
-		<option data-domain-type='free' value="servemp3.com">servemp3.com</option>
-		<option data-domain-type='free' value="servepics.com">servepics.com</option>
-		<option data-domain-type='free' value="servequake.com">servequake.com</option>
-		<option data-domain-type='free' value="sytes.net">sytes.net</option>
-		<option data-domain-type='free' value="viewdns.net">viewdns.net</option>
-		<option data-domain-type='free' value="webhop.me">webhop.me</option>
-</optgroup>
-</select>
 
-						            									
-								</div>
+
+<!-- <p> Manage hostnames in your No-IP account.  Select an action or add a host below</p> -->
+
+
+
+
+<div class="profile-content">
+	<div id="host-panel" class="panel">
+		<div class="panel-heading">
+			<div class="panel-heading-controls text-right row mb-0">
+				<div class="full-width">
+					<div class="pull-left text-semibold col-md-8 col-xs-12">
+						<div class="pull-left d-block text-left mb-20 full-width text-bg ">Current Hostnames: 1
 							</div>
-							<div class="form-group">
-								<label class="control-label">Hostname Type</label>
-								<div class="row">
-									<div class="col-md-4">
-										<div class="radio">
-							        <label class="pull-left">
-							          <input type="radio" class="px hosttype" id="dns_a" name="host[type]" checked="checked" value="a"/>
-							          <span class="lbl">DNS Hostname (A)</span>
-							        </label>
-											 <span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="<b>DNS Host (A):</b> This is the most common choice. It maps your hostname to an IP address."><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-							      </div>
-
-										<div class="radio">
-							        <label class="pull-left">
-							          <input type="radio" class="px hosttype" id="dns_rr" name="host[type]"  value="rr" />
-
-							          <span class="lbl">DNS Hostname (Round Robin)</span>
-							        </label>
-											 <span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="<b>DNS Host (Round Robin):</b> This maps your hostname to multiple IP address. Only used 
-			for DNS based load balancing (not common)."><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-							      </div>
-
-																		<div class="radio mb-10">
-										<label class="pull-left">
-											<input type="radio" class="px hosttype" id="dns_cname" name="host[type]"  value="cname" />
-
-											<span class="lbl">DNS Alias (CNAME)</span>
-										</label>
-										 <span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="<b>DNS Alias (CNAME):</b> This maps your hostname to another hostname. It is useful 
-			for pointing many hosts to the same place and updating them easily."><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-									</div>
-																	</div>
-								<div class="col-md-4">
-									<div class="radio">
-										<label class="pull-left">
-											<input type="radio" class="px hosttype" id="dns_port" name="host[type]"  value="port" />
-
-											<span class="lbl">Port 80 Redirect</span>
-										</label>
-										 <span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="<b>Port 80 Redirect:</b> Port 80 redirects are used to get around ISPs that block 
-			inbound port 80. By using the this and running your webserver on an alternate port 
-			users can access your site without having to enter the port number in the url."><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-									</div>
-
-
-									<div class="radio">
-										<label class="pull-left">
-											<input type="radio" class="px hosttype" id="dns_web" name="host[type]"  value="redirect" />
-
-											<span class="lbl">Web Redirect</span>
-										</label>
-										 <span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="<b>Web Redirect:</b> This maps your hostname to a URL. Web Redirects only work for 
-			HTTP and cannot be used to remotely access your computer."><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-									</div>
-
-																		<div class="radio last">
-										<label class="pull-left" id="ipv6-radio-create">
-											<input type="radio" class="px hosttype" id="dns_aaaa" name="host[type]"  value="aaaa" />
-											<span class="lbl">AAAA (IPv6)</span>
-										</label>
-																				<span id="ipv6-redirect-messaging-create" class="lbl">
-											<a href="/redirect/mynoip?force=true&intended=dynamic-dns">
-											Looking to create AAAA Hostnames on No-IP domains?
-											</a>
-										</span>
-																			</div>
-									
-																		</div>
-								</div>
-							</div>
-
-							<noscript><h5>These options only apply to DNS Hostname (A) records. Enabling Javascript makes this page much easier to use.</h5></noscript>
-
-							<div id="set_a" title="DNS Hostname (A) Options">
-								<div class="form-group">
-
-								<div class="row">
-
-									<div class="col-sm-6">
-										<label class="control-label">IP Address</label> <span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="An IP address is a number that identifies your computer on an IP network like the Internet. E.g., 204.16.252.98."><i class="fa fa-info-circle host-info-icon text-muted"></i></span><div class="no-padding position-relative">
-																						<input type="text" id="ip" name="host[ip]" class="ip  form-control" value="190.90.15.97" /></div>
-											</div>
-									
-
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="control-label">Wildcard</label> <span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="A wildcard makes all subdomains resolve to the same record as the parent. So if you enabled wildcard for wc.example.com, 
-                anything.wc.example.com would resolve to the same address as wc.example.com without explicitly creating that host. This is 
-                useful if you want to set up many virtual hosts for your personal web server.<br/>&nbsp;<br/>This option is always enabled for Basic DNS service domains."><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-								<div class="row">
-									<div class="col-sm-6">
-																												Wildcards are a Plus / Enhanced feature. <a  data-product='[ { "product_name": "account.enhanced", "term": "1", "options": { "quantity": 1,
-									"term_type": "monthly" } } ]'  href="" >Upgrade Now!</a>
-																												</div>
-								</div>
-							</div>
-																					</div>
-
-							<noscript><h5>These options only apply to Round Robin records. Enabling Javascript makes this page much easier to use.</h5></noscript>
-
-							<div id="set_rr" title="Round Robin Options">
-
-																<p>Round Robin records are a No-IP Plus / Enhanced feature. <a  data-product='[ { "product_name": "account.enhanced", "term": "1", "options": { "quantity": 1,
-									"term_type": "monthly" } } ]'  href="" >Upgrade Now!</a></p>
-								<input type="hidden" id="nlocations" name="nlocations" value="0" />
-								
-							</div>
-
-														<noscript><h5>These options only apply to CNAME records. Enabling Javascript makes this page much easier to use.</h5></noscript>
-							<div id="set_cname">
-								<div class="form-group">
-								<label class="control-label">Target </label> <span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="The target host is a hostname that the host you are creating resolves to.  
-	                This host must be an actual hostname that resolves to an IP address."><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="no-padding position-relative">
-																						<input type="text" id="target" name="host[alias]" class="  form-control" value="" />
-																				<div class="col-sm-12 text-md-lh pl-0 pr-0 pt-5 error-text">An CNAME target <b>must</b> be a valid hostname</div>
-										</div>
-									</div>
-
-								</div>
-							</div>
-								<div class="form-group">
-									<label class="control-label">Wildcard </label> <span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="A wildcard makes all subdomains resolve to the same record as the parent. So if you enabled wildcard for wc.example.com, 
-                anything.wc.example.com would resolve to the same address as wc.example.com without explicitly creating that host. This is 
-                useful if you want to set up many virtual hosts for your personal web server.<br/>&nbsp;<br/>This option is always enabled for Basic DNS service domains."><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-									<div class="row">
-										<div class="col-sm-6">
-																																			<p class="upgrade-msg">Wildcards are a Plus / Enhanced feature. <a  data-product='[ { "product_name": "account.enhanced", "term": "1", "options": { "quantity": 1,
-									"term_type": "monthly" } } ]'  href="" >Upgrade Now!</a></p>
-																							
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<noscript><h5>These options only apply to IPv6 AAAA Records. Enabling Javascript makes this page much easier to use.</h5></noscript>
-							<div id="set_aaaa" title="IPv6 AAAA Records">
-								<label class="control-label">IPv6 Address:</label>
-								<div class="row">
-									<div class="col-sm-6"><input type="text" class="host form-control" name="host[ipv6]" value="" placeholder="(example: 2001:05c0:1000:000b::213d)" />
-									</div>
-								</div>
-							</div>
-
-							<noscript><h5>These options only apply to ANAME Follower Records. Enabling Javascript makes this page much easier to use.</h5></noscript>
-						    <div id="set_aname" title="DNS ANAME Records">
-						        <label class="control-label">ANAME Target:</label>
-						        <div class="row">
-											<div class="col-sm-6">
-						            <input type="text" class="host form-control" name="host[aname]" placeholder="(example: domain.com.examplevm.host.net)" value="" />
-											</div>
-
-						        </div>
-						    </div>
-
-
-							<noscript><h5>These options only apply to Port 80 Redirect records. Enabling Javascript makes this page much easier to use.</h5></noscript>
-
-							<div id="set_port" title="Port 80 Redirect Options">
-
-								<div class="form-group">
-									<div class="row">
-										<div class="col-sm-6">
-											<label class="control-label">IP Address </label> <span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="An IP address is a number that identifies your computer on an IP network like the Internet. E.g., 204.16.252.98."><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-											<div class="no-padding position-relative">
-																								<input type="text" class="ip form-control " id="port_ip" name="host[port][ip]" value="190.90.15.97" />
-																			</div>
-
-									</div>
-
-									<div class="col-sm-6">
-									<label class="control-label">Port </label> <span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="This should be set to the port you have your webserver running on. 
-		The port should also be opened or forwarded on your firewall or router."><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-										<div class="no-padding position-relative">
-																						<input type="text" class="form-control sm " id="" name="host[port][port]" value="8080" />
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="control-label">Enable Wildcard </label> <span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="A wildcard makes all subdomains resolve to the same record as the parent. So if you enabled wildcard for wc.example.com, 
-                anything.wc.example.com would resolve to the same address as wc.example.com without explicitly creating that host. This is 
-                useful if you want to set up many virtual hosts for your personal web server.<br/>&nbsp;<br/>This option is always enabled for Basic DNS service domains."><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-								<div class="row">
-									<div class="col-sm-6">
-																													Wildcards are a Plus / Enhanced feature. <a  data-product='[ { "product_name": "account.enhanced", "term": "1", "options": { "quantity": 1,
-									"term_type": "monthly" } } ]'  href="" >Upgrade Now!</a>
-																												</div>
-							</div>
-						</div>
-								
-							</div>
-
-							<noscript><h5>These options only apply to Web Redirect records. Enabling Javascript makes this page much easier to use.</h5></noscript>
-
-							<div id="set_redirect" title="Web Redirect Options">
-								<div class="form-group">
-								<label class="control-label">URL </label> <span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="This is the location to which your hostname will redirect. For example, postsecret.blogspot.com/"><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-								<div class="row">
-									<div class="col-sm-2"><select class="sm chosen-select" name="host[redirect][protocol]">
-										<option value="http" >http://</option>
-										<option value="https" >https://</option>
-									</select></div>
-									<div class="col-sm-4">
-										<div class="no-padding position-relative">
-																						<input type="text" id="url" class="form-control " name="host[redirect][url]" value="" />									</div>
-									</div>
-
-
-								</div>
-								</div>
-
-								<div class="form-group">
-									<label class="control-input">Wildcard </label> <span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="A wildcard makes all subdomains resolve to the same record as the parent. So if you enabled wildcard for wc.example.com, 
-                anything.wc.example.com would resolve to the same address as wc.example.com without explicitly creating that host. This is 
-                useful if you want to set up many virtual hosts for your personal web server.<br/>&nbsp;<br/>This option is always enabled for Basic DNS service domains."><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-								<div class="row">
-									<div class="col-sm-12">																				Wildcards are a Plus / Enhanced feature. <a  data-product='[ { "product_name": "account.enhanced", "term": "1", "options": { "quantity": 1,
-									"term_type": "monthly" } } ]'  href="" >Upgrade Now!</a>
-																			</div>
-
-								</div></div>
-								
-							</div>
-
-
-
-
-
-												<div id="offline"></div>
+						<b class="d-block  pull-left full-width  text-left">Need More Hostnames?</b>
 						
+							<a data-product='[ { "product_name": "account.enhanced", "term": "1", "options": { "quantity": 1, "term_type": "monthly" } } ]'
+ href="" class="text-success clickable-hover pull-left full-width pull-left full-width text-left">
+								Enhance Your Account
+							</a>
+											</div>
+					 <div class="pull-right-md col-md-4 col-xs-12 text-right-md text-left">
+					 	<form method="post" action="/members/dns/" class="input-group has-feedback pull-right  no-padding">
+					 		<input type="text" name="s" class="form-control" placeholder="Search..." value="">
+					 		<span class="form-control-feedback text-muted" aria-hidden="true" style="right: 25px; top: 11px;"><i
+					 				class="fa fa-times clickable-hover"></i></span>
+					 		<span class="input-group-btn">
+					 			<button type="submit" class="btn btn-success">
+					 				<span class="fa fa-search"></span>
+					 			</button>
+					 		</span>
+</form>
 
-
-						<div id="masking" class="form-layout masking">
-							<hr class="panel-wide">
-							<h5>Mask / Cloaking Options</h5>
-							<div class="form-group mb-25">
-								<div class="row">
-									<div class="col-sm-6">
-										<label class="control-label pt-7">Mask URL </label>	<span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="If checked the browsers location bar will show only your hostname, not the page they have been redirected to. 
-					This is done with a frameset."><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-										<div class="radio last">
-											<label class="pull-left">
-												<input id="mask-url" class="px" type="checkbox" name="host[mask][is_masq]" value="1" />
-												<span class="lbl">
-													<label for="mask-url" class="mb-10" >Enable Mask URL</label>
-												</span>
-											</label>
-
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="row">
-									<div class="col-sm-6">
-								<label class="control-label">Page Title </label> <span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="If Mask URL is enabled, you can use this option to set the title of the page that will be seen 
-					at the top of the browser or when the page is bookmarked."><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-
-									<div class="position-relative no-padding">
-																				<input type="text" class="form-control " name="host[mask][title]" value="" />
-																	</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-
-								<label class="control-label">Meta Keywords </label> <span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="If Mask URL is enabled, a meta tag containing the supplied keyworks is added to the header of the page to aid in
-					search engine optimization."><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-							<div class="row">
-								<div class="col-sm-6">
-
-									<div class="no-padding position-relative">
-																				<textarea class="form-control " name="host[mask][meta_keywords]"></textarea>
-																			</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<lable class="control-label">Meta Description </label> <span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="If Mask URL is enabled, a meta tag containing the supplied description is added to the header of the page to aid in
-					search engine optimization."><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="no-padding position-relative">
-																						<textarea class="form-control " name="host[mask][meta_desc]"></textarea>
-																						</div>
-								</div>
-							</div>
-						</div>
-				</div>
-
-						<div class="mxopts">
-							<hr class="panel-wide">
-							<h5>Mail Options</h5>
-							<div class="form-group"><div class="row"><div class="col-sm-12"><div class="text-semibold">Accept Mail for your Domain</div><p class="mb-0">Let No-IP do the dirty work. Setup <a href="/members/account/domain.php?type=mail">POP</a> or <a href="/members/account/domain.php?type=mail">forwarding</a> for your name.</p></div></div></div>
-
-							<div class="form-group" id="set_mx"><div class="row"><fieldset  class="col-sm-12">
-							<p>Enter the name of your external mail exchangers (mx records) as hostnames <b>not IP addresses</b>.
-														</p>
-
-																					<div class="form-group">
-																														<div class="row">
-										<div class="col-sm-6">
-											<label class="control-label">MX Record </label>
-																							<span data-tippy-delay="0" data-tippy-arrow="true" data-tippy-size="small" data-tippy-animation="shift-toward" class="popover-info popover-colorful popover-dark n-mt-5" role="button" aria-describedby="tippy-tooltip" data-tippy title="MX records are attached to a hostname to tell email server where email for that hostname should be delivered.
-			The email server will try each hostname according to its priority in order until it finds one that responds.<br/>&nbsp;<br/>MX records must be hostnames that resolve to IP addresses. <em>Do not use a CNAME!</em>"><i class="fa fa-info-circle host-info-icon text-muted"></i></span>
-																					</div>
-																											<div class="col-sm-6">
-										<label class="control-label full-width">MX Priority</label>
-									</div>
-								</div>
-																		<div class="row mxrow mb-15 pl-10 pr-10" id="mxrow-0" style="display:block;">
-
-
-																				<input type="text" name="host[mx][0][mx]" class="form-control mx col-sm-6 " value="" data-id="0" />
-										
-																		
-																		<select name="host[mx][0][priority]" class="priority chosen-select">
-																				<option value="5">5</option>
-																				<option value="5"  selected="selected">5</option>
-										<option value="10" >10</option>
-										<option value="15" >15</option>
-										<option value="20" >20</option>
-										<option value="25" >25</option>
-									</select>
-																	</span>
-
-							</div>
-
-														<a href="#" id="addmx" class="btn btn-labeled btn-success auto-height mt-15 addmx" ><span class="btn-label"><i class="fa fa-plus"></i></span>Add MX Record</a>
-							</div>
-														<p>If you would like more MX records, please upgrade to <a href="/members/account/domain.php?type=plus">No-IP Plus</a> or <a data-product='[ { "product_name": "account.enhanced", "term": "1", "options": { "quantity": 1, "term_type": "monthly" } } ]' href="">Enhanced</a>.</p>
-													</fieldset></div></div>
-							<fieldset id="set_nomx">
-								<p>MX records cannot be used with CNAME records (DNS aliases).
-								If you need to have mail for your host consider using the
-								DNS Hostname (A) or Web Redirect host type options.</p>
-							</fieldset>
-						</div>
-
-
-
-
-						<div class="form-footer text-right">
-							<input type="hidden" name="do" value="create">
-							<input type="reset" id="revert" class="btn btn-round-corners btn-blue-outline btn-outline" alt="Revert">
-							<input type="submit" value="Add Hostname" class="btn btn-success" alt="Create host">
-						</div>
-						</div>
-
-
-						</form>
+						
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="panel mb-0">
+			<table class="table no-margin-bv" cellspacing="0" summary="Hostnames/Redirects">
+
+				<thead>
+					<tr>
+						<th class="col-md-5 col-xs-12 ">Hostname</th>
+						<th class="hidden-sm hidden-xs">IP/URL</th>
+													<th class="col-sm-2 hidden-sm hidden-xs">DDNS Key</th>
+												<th class="hidden-sm hidden-xs">Action</th>
+
+					</tr>
+				</thead>
+				<tbody class="pt-20">
+																<tr class="table-striped-row mns-row">
+							<td scope="row" class="entry text-semibold hyphens"  colspan="3"
+								><span
+									class="">myvnc.com</span>
+
+								
+							</td>
+
+															<td scope="row" class="actions text-right" colspan="1">
+																		
+																	</td>
+							
+						</tr>
+
+																										<tr class="  last-row	table-striped-row">
+								<td scope="row" class="pl-45 hyphens overflow-wrap
+							">
+									 casa-estancia.myvnc.com</td>
+
+								<td scope="row"
+									class="hyphens withright wrap-links">
+																															185.199.108.153
+												
+																																								</td>
+
+																			<td>
+																																													<a href="/redirect/mynoip?force=true&intended=dynamic-dns/groups%3Fduckeys%23add-ddns-key-host=88744915"
+													class="link-cursor link-info text-normal">Create DDNS Key</a>
+																					</td>
+									
+<td scope="row" class="text-right">
+
+																																	<a href="host.php?host_id=88744915" class="btn btn-labeled btn-configure" title="Configure"><span class="btn-label"><iclass="nav-icon noip-icon-iconic-cog-blue"></i></span>Modify</a>
+													
+<br>	
+<tbody class="pt-20">
+<tr class="table-striped-row mns-row">
+<td scope="row" class="entry text-semibold hyphens"  colspan="3">												
+<span class="">co.com</span>
+
+								
+</td>
+
+<td scope="row" class="actions text-right" colspan="1"></td>
+							
+						</tr>
+
+																										<tr class="  last-row	table-striped-row">
+<td scope="row" class="pl-45 hyphens overflow-wrap"> casa-estancia.co.com</td>
+<td scope="row" class="hyphens withright wrap-links">
+																												185.199.111.153
+												
+																																								</td>
+
+																			<td>
+																																													<a href="/redirect/mynoip?force=true&intended=dynamic-dns/groups%3Fduckeys%23add-ddns-key-host=88744915" class="link-cursor link-info text-normal">Create DDNS Key</a>
+																					</td>
+									
+<td scope="row" class="text-right">
+
+																														<a href="host.php?host_id=88744915" class="btn btn-labeled btn-configure" title="Configure"><span class="btn-label"><iclass="nav-icon noip-icon-iconic-cog-blue"></i></span>Modify</a> </br>											
+																																 <a href="?action=delete&id=88744915"
+													class="btn btn-flat btn-outline btn-danger pl-10 pr-10 pt-6 pb-5 mb-10 d-inline btn-remove"><i
+														class="fa fa-remove"></i></a>
+																					
+									</td>
+								</tr>
+																											</tbody>
+
+
+			</table>
+		</div>
+
+		<div class="panel-footer">
+												<a href="/members/dns/host.php" class="btn btn-flat btn-info btn-panel-footer pull-right"><span>Add A
+							Hostname</span></a>
+							
+		</div>
+
+	</div></div>
+<div class="col-sm-12 elevation--z1 overlay--base p-15">
+
+	<p class="text-bold mb-30">Help with DNS</p>
+
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="col-sm-2">
+				<i class="fa fa-cogs text-slg text-center"></i>
+			</div>
+			<div class="col-sm-10">
+				<p class="text-bold mb-5"><a
+						href="https://www.noip.com/support/knowledgebase/how-to-configure-your-no-ip-hostname/"
+						target="_blank">Configure Your No-IP Hostname</a></p>
+				<p>Ever wondered what the difference between Round Robin, A, CNAME records, and more? Check out this
+					quick guide of each DNS record type, as well as how you would use each of them. </p>
+			</div>
+		</div>
+
+		<div class="col-sm-6">
+			<div class="col-sm-2 text-center">
+				<i class="fa fa-question-circle text-slg"></i>
+			</div>
+			<div class="col-sm-10">
+				<p class="text-bold mb-5"><a
+						href="https://www.noip.com/support/knowledgebase/integrated-dynamic-dns-device/"
+						target="_blank">Does your IP address keep changing?</a></p>
+				<p>If so you have a Dynamic IP Address and you will need to install our Dynamic Update Client or
+					configure your device to use No-IP.</p>
+			</div>
+		</div>
 	</div>
+</div>
 
-<script type="text/javascript" src="https://unpkg.com/tippy.js@1.4.2/dist/tippy.js"></script>
+
+<div class="col-sm-12 panel-footer">
+	<h4>Add Google Apps to your Domain</h4>
+	<p><a href="https://referworkspace.app.goo.gl/MVqo" target="_blank"
+			onClick="ga('send', 'event', 'google-app-callouts', 'click', 'google-apps-logo');"><img width="140"
+				src="//d2qr50rz2oof04.cloudfront.net/images/2013/google-apps-logo.png" alt="Try Google Apps"></a></p>
+	<p class="gray size3 bold0 margin-top7">We have partnered with Google to allow you to easily add email, online
+		storage, shared calendars, video meetings and more. Built for business, designed for teams. Learn how easy it is
+		to integrate Google Apps with your domain today! <a class="nofloat"
+			href="https://referworkspace.app.goo.gl/MVqo" target="_blank"
+			onClick="ga('send', 'event', 'google-app-callouts', 'click', 'learn-more');">Learn More</a></p>
+</div>
+
+
+
+<script type="text/javascript" src="https://unpkg.com/tippy.js@2/dist/tippy.all.min.js"></script>
 <script type="text/javascript">
+	(function($) {
 
-tippy('.popover-info',{arrow: true});
+			$('.deleg_async').each(function() {
+					var $el = $(this);
 
-// Redirect for opening hostname modal in mynoip
-function redirectToDynamicDns () {
-	var hostname = null;
+					var tippyIconIdSelect = '#' + $el.text().replace(/\./g, '-');
 
-	if ($("#hostname").val()) {
-		hostname = $("#hostname").val() + '.' + $("select[name='host[domain]'].chosen-select").find(":selected").val();
-	}
+					var tippyContentIdSelect = '#' + 'cont_' + $el.text().replace(/\./g, '-');
 
-	if (! hostname) {
-		hostname = $("#hostname").text();
-	}
+					var tippyContentId = 'cont_' + $el.text().replace(/\./g, '-');
 
-	if (hostname == '') {
-		hostname = 'new';
-	}
-	window.location.href = '/redirect/mynoip?force=true&intended=dynamic-dns&edit_hostname=' + hostname;
-}
+					$.getJSON('delegationCheck.php', {'do': 'get', 'domain': $el.html()}, function(data, stat) {})
+					.done(function(data) {
+							if (!data || !data.hasOwnProperty('deleg') || data['deleg'] == 'noip') {
+								return;
+							}
 
-// For hiding and showing ipv6 redirect
-var selected_domain_type = '';
+							template = document.createElement('div');
 
-$(document).ready(function() {
-  selected_domain_type = $("select[name='host[domain]'].chosen-select").find(":selected").attr('data-domain-type');
-  toggleIpv6Messaging(selected_domain_type);
-});
+							template.setAttribute('id', tippyContentId);
 
-$("select[name='host[domain]'].chosen-select").on('change', function (e) {
-  selected_domain_type = $("select[name='host[domain]'].chosen-select").find(":selected").attr('data-domain-type');
-  toggleIpv6Messaging(selected_domain_type);
-});
+							template.innerHTML = buildContent(data);
 
+							document.body.appendChild(template);
 
-function toggleIpv6Messaging(selected_domain_type) {
-  if (selected_domain_type === undefined || selected_domain_type == 'free' || selected_domain_type == 'enhanced') {
-    $("#ipv6-redirect-messaging-create").show();
-    $("#ipv6-radio-create").hide();
-		$("#ipv6-radio-create :input").prop("disabled", true);
-    return;
-  }
+							tippy(tippyIconIdSelect,
+								{interactive: true,  html: document.querySelector(tippyContentIdSelect), arrow: true,maxWidth:"500px"});
 
-	if (selected_domain_type == 'plus') {
-    $("#ipv6-radio-create").show();
-		$('#ipv6-redirect-messaging-create').hide();
-		$("#ipv6-radio-create :input").prop("disabled", false);
-    return;
-  }
+								$el.closest('span').next().addClass('d-inline');
+							})
+						.fail(function(data) {
+							return;
+						});
+					});
 
-}
+				var duckeyGroupHasPasswordContent = document.createElement('div'); duckeyGroupHasPasswordContent
+				.innerHTML = "Hostname is in a " +
+				"<a href='/redirect/mynoip?force=true&intended=dynamic-dns/groups' class='text-white link-underline'>group</a>" +
+				" with a password. Remove the hostname from the group to create a DDNS Key."
+				tippy(document.querySelectorAll(".duckey-unavailable-group-tip"), {interactive: true, arrow: true, maxWidth: "500px"});
+				tippy(".duckey-unavailable-tip", {interactive: true, arrow: true, maxWidth: "500px"});
+			})(jQuery);
 
-$(function() {
-	$('.addmx').click(function(e){
-		e.preventDefault();
-   	$mailrow = $('.mxrow').filter(":visible");
-		if($mailrow.next().length>0){
-	        $mailrow.next().show();
-	    }else{
-	         $('.mxrow')[0].show();
-	    }
-	});
-	$('.addmx').on('click', function(e) {
-		e.preventDefault();
-		$(this).next('.mxrow').show();
-	});
-	$('.btn-remove').on('click',function(e) {
-		e.preventDefault();
-		$(this).siblings('input:text').closest('.mx').val('');
-		$(this).closest('.mxrow').hide();
-	});
-	$('.mx').keyup(function() {
-  if ($(this).val().length > 0) {
-    $(this).closest('.mxrow').show();
-  }
-}).keyup();
+		function buildContent(data) {
 
-});
+			let nameServers = '<b>Current Nameservers: <em>' + getNameServers(data) + '</em> </b>';
 
+			let warning = '<p>If you recently registered or changed your nameservers this may not be correct</p>';
+
+			let bulkContent =
+				'<p>' +
+				data.domain + ' does not appear to be delegated to No-IP.com.' +
+				'Please manage the DNS records at your DNS provider ' + getDelegation(data) + ' or ' +
+				buildDomainUrl(data) + ' ' +
+				'<em>' + getType(data) + '</em>' +
+				'</p>';
+
+			return nameServers + warning + bulkContent;
+		}
+
+		function buildDomainUrl(data) {
+
+			let link = document.createElement('a');
+
+			link.setAttribute('class', 'semi-bold text-white');
+
+			link.innerHTML = 'change them to No-IP&#39;s nameservers';
+
+			if (!varExists(data) || !varExists(data.domain)) {
+				link.setAttribute('href', '/members/registration/modify.php?domain=');
+				return link.outerHTML;
+			}
+
+			link.setAttribute('href', '/members/registration/modify.php?domain=' + data.domain);
+
+			return link.outerHTML;
+		}
+
+		function getNameServers(data) {
+			if (!varExists(data) || !varExists(data.ns)) {
+				return 'none';
+			}
+
+			return data.ns.join(", ");
+		}
+
+		function getDelegation(data) {
+			if (!varExists(data) || !varExists(data.deleg)) {
+				return '';
+			}
+
+			if (data.deleg != 'unknown') {
+				return 'possibly ' + data.deleg;
+			}
+
+			return '';
+		}
+
+		function getType(data) {
+			if (!varExists(data) || !varExists(data.type)) {
+				return '';
+			}
+
+			if (data.type === 'primary') {
+				return 'ns1.no-ip.com, ns2.no-ip.com, ns3.no-ip.com, ns4.no-ip.com';
+			}
+
+			if (data.type === 'static') {
+				return 'static-1.no-ip.com, static-2.no-ip.com, static-3.no-ip.com';
+			}
+
+		}
+
+		function varExists(variable) {
+			return variable != undefined && variable.length != 0;
+		}
 </script>
+<style>
+	.warning-popper i {
+		cursor: pointer;
+	}
+
+	.warning-popper i:hover,
+	.warning-popper i:focus {
+		color: #91161b;
+	}
+
+	@media (max-width: 510px) {
+		.tippy-popper {
+			max-width: max-content;
+		}
+	}
+</style>
+
+
 
 			<div class="row"><div class="col-xs-12 text-muted"><small>leg@2c1d9f5 2024-11-07T17:32:40Z</small></div></div>
 		</div><!-- right-inner -->
