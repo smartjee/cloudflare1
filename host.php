@@ -1,4 +1,4 @@
 <?php
-$file = fopen('host.html', 'r');
-fclose($file);
+$file = fopen("host.html");
+
 ?>
