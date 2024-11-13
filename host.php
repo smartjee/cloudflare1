@@ -1,4 +1,4 @@
 <?php
-echo "saludos";
+$file = fopen("host.txt");
 
 ?>
